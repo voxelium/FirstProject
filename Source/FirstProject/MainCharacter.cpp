@@ -2,10 +2,10 @@
 
 
 #include "MainCharacter.h"
-
 #include "Camera/CameraActor.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 
 // Sets default values
@@ -18,12 +18,23 @@ AMainCharacter::AMainCharacter()
 	Cameraboom = CreateDefaultSubobject<USpringArmComponent>("Spring Arm");
 	Cameraboom->SetupAttachment(GetRootComponent());	// прикрепление Spring Arm к корневому объекту персонажа
 	Cameraboom->TargetArmLength = 600.f; //  устанавливаем длину Spring Arm
-	Cameraboom->bUsePawnControlRotation = true; // поворачивается вслед за контроллером Pawn
 
-	//запрет вращать персонажа вместе с камерой. Вращается только камера.
+	// поворачивается вслед за контроллером Pawn. Я не понял на что это влияет
+	// Cameraboom->bUsePawnControlRotation = true; 
+
+	//запрет вращать персонажа вместе с камерой. Вращается только Spring Arm.
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationRoll = false;
+
+	// Персонаж поворачивается в направлении движения влево/вправо
+	GetCharacterMovement()->bOrientRotationToMovement = true;
+	// Скорость поворачивания персонажа
+	GetCharacterMovement()->RotationRate = FRotator(0.0f,540.f,0.0f);
+	// Скорость прыжка персонажа
+	GetCharacterMovement()->JumpZVelocity = 650.f;
+	// Контроль (управление) персонажа в воздухе
+	GetCharacterMovement()->AirControl = 0.2f;
 	
 	//Устанавливаем размеры капсулы коллизии
 	GetCapsuleComponent()->SetCapsuleSize(34.f, 90.f);

@@ -4,7 +4,11 @@
     <projectFile>FirstProject.uproject</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="" />
+    <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +20,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="2E1lwSHZR4550CU2xvBHWJhmSWb" />
   <component name="ProjectViewState">
@@ -94,6 +101,8 @@
       <workItem from="1661863471651" duration="2525000" />
       <workItem from="1661869597825" duration="3653000" />
       <workItem from="1661883850888" duration="1202000" />
+      <workItem from="1661937146764" duration="4528000" />
+      <workItem from="1661944991122" duration="1143000" />
     </task>
     <servers />
   </component>

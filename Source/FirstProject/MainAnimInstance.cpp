@@ -2,6 +2,7 @@
 
 
 #include "MainAnimInstance.h"
+#include "GameFramework/PawnMovementComponent.h"
 
 // Подобие конструктора у Actor
 void UMainAnimInstance::NativeInitializeAnimation()
@@ -17,7 +18,21 @@ void UMainAnimInstance::NativeInitializeAnimation()
 }
 
 //подобие Тика, для получения даных о состоянии персонажа в каждом кадре
-void UMainAnimInstance::EUpdateAnimationProperies()
+void UMainAnimInstance::UpdateAnimationProperies()
 {
+	if (Pawn == nullptr)
+	{
+		Pawn = TryGetPawnOwner();
+	}
+
+	if (Pawn)
+	{
+		FVector Speed = Pawn->GetVelocity();
+		FVector LateralSpeed = FVector(Speed.X, Speed.Y, 0.f);
+		MovementSpeed = LateralSpeed.Size();
+
+		bIsInAir = Pawn->GetMovementComponent()->IsFalling();
+		
+	}
 	
 }

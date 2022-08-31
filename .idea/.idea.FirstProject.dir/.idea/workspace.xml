@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainAnimInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainAnimInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainAnimInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainAnimInstance.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Source/FirstProject/MainCharacter.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -22,7 +23,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2E1lwSHZR4550CU2xvBHWJhmSWb" />
   <component name="ProjectViewState">
@@ -102,15 +103,26 @@
       <workItem from="1661869597825" duration="3653000" />
       <workItem from="1661883850888" duration="1202000" />
       <workItem from="1661937146764" duration="4528000" />
-      <workItem from="1661944991122" duration="1143000" />
+      <workItem from="1661944991122" duration="2148000" />
     </task>
+    <task id="LOCAL-00001" summary="update code">
+      <created>1661946578899</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661946578899</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="update code" />
+    <option name="LAST_COMMIT_MESSAGE" value="update code" />
   </component>
 </project>

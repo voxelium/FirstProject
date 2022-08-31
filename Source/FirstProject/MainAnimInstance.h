@@ -17,7 +17,8 @@ public:
 
 	virtual void NativeInitializeAnimation() override;
 
-	void EUpdateAnimationProperies();
+	UFUNCTION(BlueprintCallable, Category=AnimationProperties)
+	void UpdateAnimationProperies();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Movement")
 	float MovementSpeed;

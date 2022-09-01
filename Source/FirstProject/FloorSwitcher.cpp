@@ -15,20 +15,26 @@ AFloorSwitcher::AFloorSwitcher()
 
 	// Делаем TriggerBox корневым компонентом
 	RootComponent = TriggerBox;
+
 	// Указываем тип коллизий - только пересечения. Без взаимодействий с физикой
 	TriggerBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
+
 	// Тип коллизий для Trigger Box
 	TriggerBox->SetCollisionObjectType(ECollisionChannel::ECC_WorldStatic);
+
 	// Запрещаем реагировать на ВСЕ типы коллизий, чтобы потом указать на какой канал нужно реагировать
 	TriggerBox->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
+
 	// Указывваем на какой канал коллизий нужно реагировать и как
 	TriggerBox->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
+
 	// Устанавливаем Размер Trigger Box
 	TriggerBox->SetBoxExtent(FVector(62.f,62.f,32.f));
 	
 	// Создаем Mesh для Door
 	Door = CreateDefaultSubobject<UStaticMeshComponent>("Door");
 	Door->SetupAttachment(GetRootComponent());
+
 	// Создаем Mesh для Floor Switcher
 	FloorSwitcher = CreateDefaultSubobject<UStaticMeshComponent>("Floor Switcher");
 	FloorSwitcher->SetupAttachment(GetRootComponent());
@@ -45,8 +51,11 @@ void AFloorSwitcher::BeginPlay()
 
 	//указываем какая функция запустится по окончанию пересечения с TriggerBox
 	TriggerBox->OnComponentEndOverlap.AddDynamic(this, &AFloorSwitcher::OnOverlapEnd);
-	
-	
+
+	//запоминаем положение двери
+	DoorStartLocation = Door->GetComponentLocation();
+
+	DoorTopPlace = 200.f;
 }
 
 // Called every frame
@@ -56,16 +65,28 @@ void AFloorSwitcher::Tick(float DeltaTime)
 
 }
 
+// Реализация функции поднятия двери
 void AFloorSwitcher::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Overlap Begin"));
+	LowerSwitcher();
+	RaiseDoor();
 }
 
+// Реализация функции опускания двери
 void AFloorSwitcher::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Overlap END"));
+	LowerDoor();
+	RaiseSwitcher();
+}
+
+// обновляем положение двери
+void AFloorSwitcher::UpdateDoorLocation(float Z)
+{
+	FVector NewLocation = DoorStartLocation;
+	NewLocation.Z = Z;
+	Door->SetWorldLocation(NewLocation);
 }
 
 

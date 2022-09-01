@@ -15,38 +15,21 @@ public:
 	// Sets default values for this actor's properties
 	AFloorSwitcher();
 
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+	
 	// Объем для пересечения, запускающий какой-то функционал. Невидимый
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
 	class UBoxComponent* TriggerBox;
 
 	// Mesh - Отображение trigger box в мире
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
-	UStaticMeshComponent* FloorSwitcher;
+	UStaticMeshComponent* Button;
 
 	// Mesh - срабатывающий после срабатывания Trigger Box
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
 	UStaticMeshComponent* Door;
-
-	// Исходное положение двери
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
-	FVector DoorStartLocation;
-
-	// Высота поднятия двери
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
-	float DoorTopPlace;
 	
-	// Исходное положение кнопки
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
-	FVector SwitcherStartLOcation;
-	
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
 	// функция запустится при начале пересечения
 	UFUNCTION()
 	void OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
@@ -55,6 +38,7 @@ public:
 	UFUNCTION()
 	void OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 
+	//---------------------Door----------------------
 	// Объявление функции Поднятия двери
 	UFUNCTION(BlueprintImplementableEvent, Category= "Floor Switch")
 	void RaiseDoor();
@@ -63,16 +47,42 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category= "Floor Switch")
 	void LowerDoor();
 
+	//обновление положения двери
+	UFUNCTION(BlueprintCallable, Category= "Floor Switch")
+	void UpdateDoorLocation(float Z);
+
+	// Исходное положение двери
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
+	FVector DoorStartLocation;
+
+	// Высота поднятия двери
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
+	float DoorEndPlace;
+	
+	
+	//---------------------Button----------------------
+	// Исходное положение кнопки
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
+	FVector ButtonStartLocation;
+	
+	// Высота опускания кнопки
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
+	float ButtonEndPlace;
+	
 	//Функция поднятия кнопки
 	UFUNCTION(BlueprintImplementableEvent, Category= "Floor Switch")
-	void RaiseSwitcher();
+	void RaiseButton();
 
 	//Функция опускания кнопки
 	UFUNCTION(BlueprintImplementableEvent, Category= "Floor Switch")
-	void LowerSwitcher();
-
-	//обновление положения
-	UFUNCTION(BlueprintCallable, Category= "Floor Switch")
-	void UpdateDoorLocation(float Z);
+	void LoweringButton();
 	
+	//обновление положения кнопки
+	UFUNCTION(BlueprintCallable, Category= "Floor Switch")
+	void UpdateButtonLocation(float Z);
+
+	
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 };

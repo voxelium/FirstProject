@@ -36,8 +36,8 @@ AFloorSwitcher::AFloorSwitcher()
 	Door->SetupAttachment(GetRootComponent());
 
 	// Создаем Mesh для Floor Switcher
-	FloorSwitcher = CreateDefaultSubobject<UStaticMeshComponent>("Floor Switcher");
-	FloorSwitcher->SetupAttachment(GetRootComponent());
+	Button = CreateDefaultSubobject<UStaticMeshComponent>("Floor Switcher");
+	Button->SetupAttachment(GetRootComponent());
 
 }
 
@@ -54,8 +54,12 @@ void AFloorSwitcher::BeginPlay()
 
 	//запоминаем положение двери
 	DoorStartLocation = Door->GetComponentLocation();
+	
+	//запоминаем положение кнопки
+	ButtonStartLocation = Button->GetComponentLocation();
+	
 
-	DoorTopPlace = 200.f;
+
 }
 
 // Called every frame
@@ -69,7 +73,7 @@ void AFloorSwitcher::Tick(float DeltaTime)
 void AFloorSwitcher::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	LowerSwitcher();
+	LoweringButton();
 	RaiseDoor();
 }
 
@@ -78,7 +82,7 @@ void AFloorSwitcher::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AAct
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 	LowerDoor();
-	RaiseSwitcher();
+	RaiseButton();
 }
 
 // обновляем положение двери
@@ -89,4 +93,11 @@ void AFloorSwitcher::UpdateDoorLocation(float Z)
 	Door->SetWorldLocation(NewLocation);
 }
 
+// обновляем положение кнопки
+void AFloorSwitcher::UpdateButtonLocation(float Z)
+{
+	FVector NewLocation = ButtonStartLocation;
+	NewLocation.Z = Z;
+	Button->SetWorldLocation(NewLocation);
+}
 

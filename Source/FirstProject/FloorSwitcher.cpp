@@ -23,9 +23,12 @@ AFloorSwitcher::AFloorSwitcher()
 	TriggerBox->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
 	// Указывваем на какой канал коллизий нужно реагировать и как
 	TriggerBox->SetCollisionResponseToChannel(ECollisionChannel::ECC_Pawn, ECollisionResponse::ECR_Overlap);
-
+	// Устанавливаем Размер Trigger Box
+	TriggerBox->SetBoxExtent(FVector(62.f,62.f,32.f));
+	
 	// Создаем Mesh для Door
 	Door = CreateDefaultSubobject<UStaticMeshComponent>("Door");
+	Door->SetupAttachment(GetRootComponent());
 	// Создаем Mesh для Floor Switcher
 	FloorSwitcher = CreateDefaultSubobject<UStaticMeshComponent>("Floor Switcher");
 	FloorSwitcher->SetupAttachment(GetRootComponent());

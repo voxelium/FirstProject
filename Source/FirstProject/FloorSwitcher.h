@@ -31,7 +31,7 @@ public:
 	UStaticMeshComponent* Door;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
-	USceneComponent* Scene;
+	USceneComponent* Root;
 	
 	// функция запустится при начале пересечения
 	UFUNCTION()

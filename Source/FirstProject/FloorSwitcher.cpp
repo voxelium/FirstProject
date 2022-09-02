@@ -10,9 +10,11 @@ AFloorSwitcher::AFloorSwitcher()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	RootComponent = Scene;
+	Root = CreateDefaultSubobject<USceneComponent>("Root");
+	RootComponent = Root;
 	TriggerBox = CreateDefaultSubobject<UBoxComponent>("Trigger Box");
 	TriggerBox->SetRelativeLocation(FVector(0,0,0));
+	TriggerBox->SetupAttachment(GetRootComponent());
 	 
 	// Делаем TriggerBox кор0невым компонентом
 	// RootComponent = TriggerBox;
@@ -35,12 +37,12 @@ AFloorSwitcher::AFloorSwitcher()
 	//---------------------------------------Door-------------------------------
 	// Создаем Mesh для Door
 	Door = CreateDefaultSubobject<UStaticMeshComponent>("Door");
-	// Door->SetupAttachment(GetRootComponent());
+	Door->SetupAttachment(GetRootComponent());
 	
 	//---------------------------------------Button-------------------------------
 	// Создаем Mesh для Button
 	Button = CreateDefaultSubobject<UStaticMeshComponent>("Floor Switcher");
-	// Button->SetupAttachment(GetRootComponent());
+	Button->SetupAttachment(GetRootComponent());
 
 	SwitchTime = 2.f;
 }

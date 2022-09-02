@@ -20,12 +20,20 @@ AMainCharacter::AMainCharacter()
 	Cameraboom->TargetArmLength = 600.f; //  устанавливаем длину Spring Arm
 
 	// поворачивается вслед за контроллером Pawn. Я не понял на что это влияет
-	// Cameraboom->bUsePawnControlRotation = true; 
+	Cameraboom->bUsePawnControlRotation = true; 
 
-	//запрет вращать персонажа вместе с камерой. Вращается только Spring Arm.
+	//запрет вращать персонажа вместе с SpringArm. Вращается только Spring Arm.
 	bUseControllerRotationYaw = false;
-	bUseControllerRotationPitch = false;
 	bUseControllerRotationRoll = false;
+	bUseControllerRotationPitch = false;
+
+
+
+
+	//создание камеры
+	FollowCamera = CreateDefaultSubobject<UCameraComponent>("Camera");
+	FollowCamera->SetupAttachment(Cameraboom, USpringArmComponent::SocketName); // крепим камеру к SpringArm
+	// FollowCamera->bUsePawnControlRotation = false; // запрещает пешке Pawn поворачиваться за SpringArm
 
 	// Персонаж поворачивается в направлении движения влево/вправо
 	GetCharacterMovement()->bOrientRotationToMovement = true;
@@ -39,11 +47,6 @@ AMainCharacter::AMainCharacter()
 	//Устанавливаем размеры капсулы коллизии
 	GetCapsuleComponent()->SetCapsuleSize(34.f, 90.f);
 	
-	//создание камеры
-	FollowCamera = CreateDefaultSubobject<UCameraComponent>("Camera");
-	FollowCamera->SetupAttachment(Cameraboom, USpringArmComponent::SocketName); // крепим камеру к SpringArm
-	FollowCamera->bUsePawnControlRotation = false; // игнорирует повороты контроллера Pawn
-
 	//установка значений поворота камеры
 	BaseTurnRate	= 65.f;
 	BaseLookUp		= 65.f;
@@ -55,6 +58,10 @@ AMainCharacter::AMainCharacter()
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	ClampCameraboomRotation = Cameraboom->GetComponentRotation();
+	ClampCameraboomRotation.Pitch = FMath::Clamp(ClampCameraboomRotation.Pitch,0.f,-45.f);
+	Cameraboom->SetWorldRotation(ClampCameraboomRotation);
 	
 }
 

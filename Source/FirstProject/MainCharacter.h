@@ -15,6 +15,8 @@ public:
 	// Sets default values for this character's properties
 	AMainCharacter();
 
+	//----------------------- VARIABLES -----------------------
+	
 	//Камера бум позиционирует камеры сзади игрока
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* Cameraboom;
@@ -31,13 +33,11 @@ public:
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly, Category=Camera);
 	float BaseLookUp;
 
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly, Category=Camera);
+	FRotator ClampCameraboomRotation;
 	
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
-public:	
+//----------------------- FUNCTIONS -----------------------
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -61,5 +61,9 @@ public:
 
 	//Getter for Camera
 	FORCEINLINE UCameraComponent* GetFollow() const {return FollowCamera; }
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 	
 };

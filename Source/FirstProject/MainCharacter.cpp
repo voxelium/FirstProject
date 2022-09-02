@@ -3,6 +3,7 @@
 
 #include "MainCharacter.h"
 #include "Camera/CameraActor.h"
+#include "Camera/PlayerCameraManager.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -18,7 +19,9 @@ AMainCharacter::AMainCharacter()
 	Cameraboom = CreateDefaultSubobject<USpringArmComponent>("Spring Arm");
 	Cameraboom->SetupAttachment(GetRootComponent());	// прикрепление Spring Arm к корневому объекту персонажа
 	Cameraboom->TargetArmLength = 600.f; //  устанавливаем длину Spring Arm
-
+	// Cameraboom->SetWorldRotation(FRotator(-60.f,0.f,0.f));
+	
+	
 	// поворачивается вслед за контроллером Pawn. Я не понял на что это влияет
 	Cameraboom->bUsePawnControlRotation = true; 
 
@@ -27,14 +30,13 @@ AMainCharacter::AMainCharacter()
 	bUseControllerRotationRoll = false;
 	bUseControllerRotationPitch = false;
 
-
-
-
+	
 	//создание камеры
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>("Camera");
 	FollowCamera->SetupAttachment(Cameraboom, USpringArmComponent::SocketName); // крепим камеру к SpringArm
 	// FollowCamera->bUsePawnControlRotation = false; // запрещает пешке Pawn поворачиваться за SpringArm
 
+	
 	// Персонаж поворачивается в направлении движения влево/вправо
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	// Скорость поворачивания персонажа
@@ -51,7 +53,7 @@ AMainCharacter::AMainCharacter()
 	BaseTurnRate	= 65.f;
 	BaseLookUp		= 65.f;
 
-	
+
 }
 
 // Called when the game starts or when spawned
@@ -59,9 +61,21 @@ void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	ClampCameraboomRotation = Cameraboom->GetComponentRotation();
-	ClampCameraboomRotation.Pitch = FMath::Clamp(ClampCameraboomRotation.Pitch,0.f,-45.f);
-	Cameraboom->SetWorldRotation(ClampCameraboomRotation);
+	// Устанавливает ограничение для Pitch rotation камеры без проверки ссылки на PlayerController
+	PlayerController = Cast<APlayerController>(Controller);
+	PlayerController->PlayerCameraManager->ViewPitchMin = -45.f;
+	PlayerController->PlayerCameraManager->ViewPitchMax = 0.f;
+	
+	// Устанавливает ограничение для Pitch камеры с проверкой ссылки на PlayerController
+	 // PlayerController = Cast<APlayerController>(Controller);
+	 // if (PlayerController)
+	 // {
+	 // 	if (PlayerController->PlayerCameraManager)
+	 // 	{
+	 // 		PlayerController->PlayerCameraManager->ViewPitchMin = -45.f;
+	 // 		PlayerController->PlayerCameraManager->ViewPitchMax = 0.f;
+	 // 	}
+	 // }
 	
 }
 
@@ -69,7 +83,7 @@ void AMainCharacter::BeginPlay()
 void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	
 }
 
 // Called to bind functionality to input
@@ -78,7 +92,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	check (PlayerInputComponent);
 
-	//Входные сигналы для упарвления персонажем
+	//Входные сигналы для управления персонажем
 	PlayerInputComponent->BindAxis("MoveForward",	this, &AMainCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight",		this, &AMainCharacter::MoveRight);
 	

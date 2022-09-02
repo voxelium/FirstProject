@@ -33,8 +33,9 @@ public:
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly, Category=Camera);
 	float BaseLookUp;
 
-	UPROPERTY(VisibleAnywhere,BlueprintReadOnly, Category=Camera);
-	FRotator ClampCameraboomRotation;
+	APlayerController* PlayerController;
+
+	
 	
 
 //----------------------- FUNCTIONS -----------------------

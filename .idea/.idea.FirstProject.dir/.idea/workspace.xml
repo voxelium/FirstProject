@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Critter.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Critter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_FloorSwitcher.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_FloorSwitcher.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Character/BP_MainCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/BP_MainCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/MainCharacter_BP.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/FirstProjectGameMode_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstProjectGameMode_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StartMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StartMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FloorSwitcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FloorSwitcher.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FloorSwitcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FloorSwitcher.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" afterDir="false" />
     </list>
@@ -123,6 +114,7 @@
       <workItem from="1662105600937" duration="2837000" />
       <workItem from="1662112629031" duration="3761000" />
       <workItem from="1662120991630" duration="847000" />
+      <workItem from="1662142825375" duration="6402000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>

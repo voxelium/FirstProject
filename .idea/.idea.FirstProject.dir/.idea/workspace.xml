@@ -7,7 +7,13 @@
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/BP_FloorSwitcher.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_FloorSwitcher.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/MainCharacter_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/MainCharacter_BP.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StartMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StartMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/RdAny (2).cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderLink/Module.RiderLink.cpp.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderLink/ProtocolFactory.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderLink/RiderLink.cpp.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderLink/UE4TypesMarshallers.cpp.d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/FloorSwitcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FloorSwitcher.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/FloorSwitcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FloorSwitcher.h" afterDir="false" />
     </list>
@@ -111,6 +117,7 @@
       <workItem from="1662029379434" duration="781000" />
       <workItem from="1662036574550" duration="4564000" />
       <workItem from="1662047695697" duration="2429000" />
+      <workItem from="1662096479383" duration="5879000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>

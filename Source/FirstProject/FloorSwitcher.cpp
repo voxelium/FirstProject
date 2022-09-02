@@ -2,7 +2,6 @@
 
 
 #include "FloorSwitcher.h"
-
 #include "Components/BoxComponent.h"
 
 // Sets default values
@@ -11,11 +10,13 @@ AFloorSwitcher::AFloorSwitcher()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	RootComponent = Scene;
 	TriggerBox = CreateDefaultSubobject<UBoxComponent>("Trigger Box");
-
-	// Делаем TriggerBox корневым компонентом
-	RootComponent = TriggerBox;
-
+	TriggerBox->SetRelativeLocation(FVector(0,0,0));
+	 
+	// Делаем TriggerBox кор0невым компонентом
+	// RootComponent = TriggerBox;
+	
 	// Указываем тип коллизий - только пересечения. Без взаимодействий с физикой
 	TriggerBox->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 
@@ -30,16 +31,20 @@ AFloorSwitcher::AFloorSwitcher()
 
 	// Устанавливаем Размер Trigger Box
 	TriggerBox->SetBoxExtent(FVector(62.f,62.f,32.f));
-	
+
+	//---------------------------------------Door-------------------------------
 	// Создаем Mesh для Door
 	Door = CreateDefaultSubobject<UStaticMeshComponent>("Door");
-	Door->SetupAttachment(GetRootComponent());
-
-	// Создаем Mesh для Floor Switcher
+	// Door->SetupAttachment(GetRootComponent());
+	
+	//---------------------------------------Button-------------------------------
+	// Создаем Mesh для Button
 	Button = CreateDefaultSubobject<UStaticMeshComponent>("Floor Switcher");
-	Button->SetupAttachment(GetRootComponent());
+	// Button->SetupAttachment(GetRootComponent());
 
+	SwitchTime = 2.f;
 }
+
 
 // Called when the game starts or when spawned
 void AFloorSwitcher::BeginPlay()
@@ -69,20 +74,24 @@ void AFloorSwitcher::Tick(float DeltaTime)
 
 }
 
-// Реализация функции поднятия двери
+//--------------------------------- FUNCTIONS --------------------------
+
+// Действия при начале пересечения
 void AFloorSwitcher::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	bCharacterOnSwitch = true;
 	LoweringButton();
 	RaiseDoor();
 }
 
-// Реализация функции опускания двери
+// Действия при окончании пересечения
 void AFloorSwitcher::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
-	LowerDoor();
-	RaiseButton();
+	bCharacterOnSwitch = false;
+	GetWorldTimerManager().SetTimer(SwitchTimerHandle, this, &AFloorSwitcher::CloseDoor, SwitchTime);
+
 }
 
 // обновляем положение двери
@@ -101,3 +110,13 @@ void AFloorSwitcher::UpdateButtonLocation(float Z)
 	Button->SetWorldLocation(NewLocation);
 }
 
+// Закрывание двери
+void AFloorSwitcher::CloseDoor()
+{
+if (!bCharacterOnSwitch)
+	{
+	LowerDoor();
+	RaiseButton();
+	}
+
+}

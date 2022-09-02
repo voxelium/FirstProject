@@ -29,6 +29,9 @@ public:
 	// Mesh - срабатывающий после срабатывания Trigger Box
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
 	UStaticMeshComponent* Door;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Floor Switcher")
+	USceneComponent* Scene;
 	
 	// функция запустится при начале пересечения
 	UFUNCTION()
@@ -81,6 +84,15 @@ public:
 	UFUNCTION(BlueprintCallable, Category= "Floor Switch")
 	void UpdateButtonLocation(float Z);
 
+	//Таймер для закрытия двери
+	FTimerHandle SwitchTimerHandle;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Floor Switcher")
+	float SwitchTime;
+	
+	void CloseDoor();
+
+	bool bCharacterOnSwitch = false;
 	
 protected:
 	// Called when the game starts or when spawned

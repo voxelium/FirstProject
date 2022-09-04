@@ -14,6 +14,9 @@ class FIRSTPROJECT_API AFloatingPlatform : public AActor
 public:
 	// Sets default values for this actor's properties
 	AFloatingPlatform();
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Platform")
+	UStaticMeshComponent* Mesh;
 
 protected:
 	// Called when the game starts or when spawned
@@ -22,4 +25,6 @@ protected:
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	
 };

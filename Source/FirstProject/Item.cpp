@@ -14,7 +14,8 @@ AItem::AItem()
 	CollisionVolume = CreateDefaultSubobject<USphereComponent>("Collision Volume");
 	RootComponent = CollisionVolume;
 
-	CollisionVolume->OnComponentBeginOverlap.AddDynamic(this, );
+	CollisionVolume->OnComponentBeginOverlap.AddDynamic(this, & AItem::OnOverlapBegin);
+	CollisionVolume->OnComponentEndOverlap.AddDynamic(this, & AItem::OnOverlapEnd);
 }
 
 // Called when the game starts or when spawned
@@ -28,5 +29,17 @@ void AItem::BeginPlay()
 void AItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+}
+
+void AItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	
+}
+
+void AItem::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex)
+{
+	
 }
 

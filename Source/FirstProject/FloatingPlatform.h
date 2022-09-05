@@ -2,8 +2,6 @@
 
 #pragma once
 
-#include <mach/boolean.h>
-
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "FloatingPlatform.generated.h"
@@ -26,7 +24,7 @@ public:
 	UPROPERTY(EditAnywhere, meta=(MakeEditWidget = "true"), Category="Platform")
 	FVector EndPoint;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Platform")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Platform")
 	float InterpSpeed;
 	
 	FTimerHandle InterpTimer;

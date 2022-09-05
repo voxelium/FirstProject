@@ -17,7 +17,8 @@ AMainCharacter::AMainCharacter()
 
 	//создание Spring Arm камеры
 	Cameraboom = CreateDefaultSubobject<USpringArmComponent>("Spring Arm");
-	Cameraboom->SetupAttachment(GetRootComponent());	// прикрепление Spring Arm к корневому объекту персонажа
+	// Cameraboom->SetupAttachment(GetRootComponent());	// прикрепление Spring Arm к корневому объекту персонажа
+	Cameraboom->SetupAttachment (GetRootComponent());	
 	Cameraboom->TargetArmLength = 600.f; //  устанавливаем длину Spring Arm
 	Cameraboom->SetWorldRotation(FRotator(-45.f,0.f,0.f));
 	
@@ -51,7 +52,7 @@ AMainCharacter::AMainCharacter()
 	
 	//установка значений поворота камеры
 	BaseTurnRate	= 65.f;
-	BaseLookUp		= -45.f;
+	// BaseLookUp		= -45.f;
 
 
 }
@@ -66,8 +67,7 @@ void AMainCharacter::BeginPlay()
 	PlayerController->PlayerCameraManager->ViewPitchMin = -45.f;
 	PlayerController->PlayerCameraManager->ViewPitchMax = 0.f;
 	
-	
-	// Устанавливает ограничение для Pitch камеры с проверкой ссылки на PlayerController
+	// Устанавливает ограничение для Pitch камеры с проверкой ссылки на PlayerController (более правильный вариант)
 	 // PlayerController = Cast<APlayerController>(Controller);
 	 // if (PlayerController)
 	 // {
@@ -77,7 +77,8 @@ void AMainCharacter::BeginPlay()
 	 // 		PlayerController->PlayerCameraManager->ViewPitchMax = 0.f;
 	 // 	}
 	 // }
-	
+	// Устанавливает Pitch поворот камеры в начале игры
+	PlayerController->SetControlRotation(FRotator(0-20.f,0.f,0.f));
 }
 
 // Called every frame

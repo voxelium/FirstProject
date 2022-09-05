@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Item.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FirstProject/Item.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/BP_SpawnVolume.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/BP_SpawnVolume.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StartMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StartMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/BP_MainCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/BP_MainCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Materials/M_Metal_Steel.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Materials/M_Metal_Steel.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Materials/T_MacroVariation.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Materials/T_Metal_Steel_D.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Materials/T_Metal_Steel_N.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +127,8 @@
       <workItem from="1662283518664" duration="7906000" />
       <workItem from="1662298253475" duration="3365000" />
       <workItem from="1662352550722" duration="9598000" />
+      <workItem from="1662376203885" duration="544000" />
+      <workItem from="1662388331423" duration="1507000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>

@@ -19,7 +19,7 @@ AMainCharacter::AMainCharacter()
 	Cameraboom = CreateDefaultSubobject<USpringArmComponent>("Spring Arm");
 	Cameraboom->SetupAttachment(GetRootComponent());	// прикрепление Spring Arm к корневому объекту персонажа
 	Cameraboom->TargetArmLength = 600.f; //  устанавливаем длину Spring Arm
-	// Cameraboom->SetWorldRotation(FRotator(-60.f,0.f,0.f));
+	Cameraboom->SetWorldRotation(FRotator(-45.f,0.f,0.f));
 	
 	
 	// поворачивается вслед за контроллером Pawn. Я не понял на что это влияет
@@ -65,6 +65,7 @@ void AMainCharacter::BeginPlay()
 	PlayerController = Cast<APlayerController>(Controller);
 	PlayerController->PlayerCameraManager->ViewPitchMin = -45.f;
 	PlayerController->PlayerCameraManager->ViewPitchMax = 0.f;
+	
 	
 	// Устанавливает ограничение для Pitch камеры с проверкой ссылки на PlayerController
 	 // PlayerController = Cast<APlayerController>(Controller);

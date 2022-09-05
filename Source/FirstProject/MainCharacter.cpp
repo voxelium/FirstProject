@@ -51,7 +51,7 @@ AMainCharacter::AMainCharacter()
 	
 	//установка значений поворота камеры
 	BaseTurnRate	= 65.f;
-	BaseLookUp		= 65.f;
+	BaseLookUp		= -45.f;
 
 
 }

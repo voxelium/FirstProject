@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/BP_MainCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/BP_MainCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Sounds/CoinsSound.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Sounds/CoinsSound_Cue.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StartMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StartMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Mac/UnrealEditor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Binaries/Mac/UnrealEditor.modules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Item.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Item.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +125,7 @@
       <workItem from="1662376203885" duration="544000" />
       <workItem from="1662388331423" duration="5462000" />
       <workItem from="1662401417163" duration="345000" />
-      <workItem from="1662404488086" duration="333000" />
+      <workItem from="1662404488086" duration="976000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>
@@ -198,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662390247608</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="000">
+      <created>1662405111929</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662405111929</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +216,7 @@
     <MESSAGE value="Spawn Volume start" />
     <MESSAGE value="new ignores" />
     <MESSAGE value="item start" />
-    <option name="LAST_COMMIT_MESSAGE" value="item start" />
+    <MESSAGE value="000" />
+    <option name="LAST_COMMIT_MESSAGE" value="000" />
   </component>
 </project>

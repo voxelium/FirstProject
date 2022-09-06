@@ -4,27 +4,7 @@
     <projectFile>FirstProject.uproject</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/BP_FloatingPlatform.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/BP_FloorSwitcher.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/BP_SpawnVolume.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Enemies/BP_Critter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Enemies/BP_Critter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Explosive_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Explosive_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Meshes/Cube.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Meshes/Cube.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Meshes/SM_AssetPlatform.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Meshes/SM_AssetPlatform.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Meshes/SM_Pickup_Coin.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Meshes/SM_Pickup_Coin.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StartMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StartMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Explosive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Explosive.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Item.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Item.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Pickup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Pickup.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,6 +127,7 @@
       <workItem from="1662441082525" duration="7174000" />
       <workItem from="1662461855692" duration="2606000" />
       <workItem from="1662469032061" duration="2960000" />
+      <workItem from="1662478825128" duration="2491000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>

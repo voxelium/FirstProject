@@ -38,7 +38,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Sound")
 	class USoundCue* OverlapSound;
-	
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Rotation")
+	bool bPikupRotate;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Rotation")
+	float RotationRate;
 	
 protected:
 	// Called when the game starts or when spawned

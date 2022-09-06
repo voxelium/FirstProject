@@ -26,6 +26,8 @@ AItem::AItem()
 	IdleParticlesComponent = CreateDefaultSubobject<UParticleSystemComponent>("Idle Particles");
 	IdleParticlesComponent->SetupAttachment(GetRootComponent());
 
+	//запрещает item вращаться
+	bPikupRotate = false;
 }
 
 // Called when the game starts or when spawned
@@ -40,6 +42,13 @@ void AItem::BeginPlay()
 void AItem::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if(bPikupRotate)
+	{
+		FRotator Rotation = GetActorRotation();
+		Rotation.Yaw += RotationRate;
+		SetActorRotation(Rotation);
+	}
 }
 
 void AItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,

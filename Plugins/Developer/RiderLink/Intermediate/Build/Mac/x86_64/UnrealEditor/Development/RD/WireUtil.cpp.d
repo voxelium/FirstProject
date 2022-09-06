@@ -1,7 +1,7 @@
-/Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/WireUtil.cpp.o: \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/WireUtil.cpp \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/Definitions.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/WireUtil.h \
+/Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/WireUtil.cpp.o: \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/WireUtil.cpp \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/Definitions.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/wire/WireUtil.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstdint \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config_site \
@@ -34,11 +34,11 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_uintptr_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_intmax_t.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_uintmax_t.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/rd_framework_export.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/core_util.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/erase_if.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/gen_util.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/hash.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/rd_framework_export.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/core_util.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/erase_if.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/gen_util.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/hash.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cstddef \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/version \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include/stddef.h \
@@ -258,10 +258,10 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/ranges_operations.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/allocator.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/overloaded.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/shared_function.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/to_string.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/allocator.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/overloaded.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/shared_function.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/to_string.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/algorithm \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__bits \
@@ -429,42 +429,42 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__split_buffer \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/future \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/codecvt \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/thirdparty.hpp \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_set.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/thirdparty.hpp \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_set.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/deque \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_hash.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_hash.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/cmath \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/math.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/math.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_map.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/ordered-map/include/tsl/ordered_map.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/optional \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/string-view-lite/include/nonstd/string_view.hpp \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/wrapper.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/core_traits.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/Void.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/spdlog.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/common.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/tweakme.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/null_mutex.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/fmt.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/core.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/format.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/registry.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/string-view-lite/include/nonstd/string_view.hpp \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/wrapper.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/util/core_traits.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/types/Void.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/spdlog.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/common.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/tweakme.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/null_mutex.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/fmt.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/core.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/fmt/bundled/format.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/registry.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/unordered_map \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__hash_table \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__node_handle \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/logger.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/backtracer.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg_buffer.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/circular_q.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/version.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/synchronous_factory.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/logger.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/backtracer.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/log_msg_buffer.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/circular_q.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/version.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/spdlog/include/spdlog/details/synchronous_factory.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/PassiveSocket.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/ActiveSocket.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/SimpleSocket.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/PassiveSocket.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/ActiveSocket.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/SimpleSocket.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/stat.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_filesec_t.h \
@@ -501,5 +501,5 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/fcntl.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_o_sync.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/sys/_types/_o_dsync.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/Host.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/StatTimer.h
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/Host.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/thirdparty/clsocket/src/StatTimer.h

@@ -1,7 +1,7 @@
-/Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/ISerializable.cpp.o: \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ISerializable.cpp \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/Definitions.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ISerializable.h \
+/Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/ISerializable.cpp.o: \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ISerializable.cpp \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/Definitions.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/serialization/ISerializable.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/string \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__config_site \
@@ -358,5 +358,5 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_wctrans_t.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/rd_framework_export.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/hash.h
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/rd_framework_export.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_core_cpp/src/main/std/hash.h

@@ -1,8 +1,8 @@
-/Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/SimpleScheduler.cpp.o: \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SimpleScheduler.cpp \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/Definitions.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SimpleScheduler.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/base/IScheduler.h \
+/Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/SimpleScheduler.cpp.o: \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SimpleScheduler.cpp \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RD/Definitions.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/SimpleScheduler.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/src/main/scheduler/base/IScheduler.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/functional \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/search.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -364,4 +364,4 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/wctype.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/_types/_wctrans_t.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/rd_framework_export.h
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RD/src/rd_framework_cpp/rd_framework_export.h

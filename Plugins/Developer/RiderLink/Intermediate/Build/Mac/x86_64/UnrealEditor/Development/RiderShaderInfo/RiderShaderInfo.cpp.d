@@ -1,7 +1,7 @@
-/Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderShaderInfo/RiderShaderInfo.cpp.o: \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.cpp \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderShaderInfo/Definitions.h \
-  /Volumes/DataFiles/my_CLOUDS/YandexDisc/WIP/FirstProject/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.h \
+/Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderShaderInfo/RiderShaderInfo.cpp.o: \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.cpp \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Intermediate/Build/Mac/x86_64/UnrealEditor/Development/RiderShaderInfo/Definitions.h \
+  /Volumes/DataFiles/_PROJECTS/UE_Projects/FirstProject/Plugins/Developer/RiderLink/Source/RiderShaderInfo/RiderShaderInfo.h \
   /Volumes/DataFiles/Unreal_Engine/UE_5.0/Engine/Source/Runtime/Core/Public/Modules/ModuleInterface.h \
   /Volumes/DataFiles/Unreal_Engine/UE_5.0/Engine/Source/Runtime/Core/Public/CoreTypes.h \
   /Volumes/DataFiles/Unreal_Engine/UE_5.0/Engine/Source/Runtime/Core/Public/HAL/Platform.h \

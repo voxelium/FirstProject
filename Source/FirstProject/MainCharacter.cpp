@@ -43,9 +43,9 @@ AMainCharacter::AMainCharacter()
 	// Скорость поворачивания персонажа
 	GetCharacterMovement()->RotationRate = FRotator(0.0f,540.f,0.0f);
 	// Скорость прыжка персонажа
-	GetCharacterMovement()->JumpZVelocity = 650.f;
+	GetCharacterMovement()->JumpZVelocity = 550.f;
 	// Контроль (управление) персонажа в воздухе
-	GetCharacterMovement()->AirControl = 0.2f;
+	GetCharacterMovement()->AirControl = 0.1f;
 	
 	//Устанавливаем размеры капсулы коллизии
 	GetCapsuleComponent()->SetCapsuleSize(34.f, 90.f);

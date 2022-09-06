@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "NiagaraEmitter.h"
 #include "GameFramework/Actor.h"
+
 #include "Item.generated.h"
 
 UCLASS()
@@ -16,9 +18,28 @@ public:
 	AItem();
 	
 	//Базовая форма коллизий
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Item | Collision")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Collision")
 	class USphereComponent* CollisionVolume;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Mesh")
+	UStaticMeshComponent* Mesh;
 
+	// 1 вариант использования частиц - как Component
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Particles Idle")
+	UParticleSystemComponent* IdleParticlesComponent;
+
+	// 2 вариант использования частиц - как Систему частиц (Cascad)
+	// UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Particles Spawn")
+	// UParticleSystem* OverlapeParticles;
+
+	// 2 вариант использования частиц - как Систему частиц (Niagara)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Particles Spawn")
+	UNiagaraSystem * OverlapeParticles;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Sound")
+	class USoundCue* OverlapSound;
+	
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

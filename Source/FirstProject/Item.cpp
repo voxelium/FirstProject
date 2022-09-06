@@ -14,15 +14,15 @@ AItem::AItem()
 	CollisionVolume = CreateDefaultSubobject<USphereComponent>("Collision Volume");
 	RootComponent = CollisionVolume;
 
-	CollisionVolume->OnComponentBeginOverlap.AddDynamic(this, & AItem::OnOverlapBegin);
-	CollisionVolume->OnComponentEndOverlap.AddDynamic(this, & AItem::OnOverlapEnd);
+
 }
 
 // Called when the game starts or when spawned
 void AItem::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	CollisionVolume->OnComponentBeginOverlap.AddDynamic(this, & AItem::OnOverlapBegin);
+	CollisionVolume->OnComponentEndOverlap.AddDynamic(this, & AItem::OnOverlapEnd);
 }
 
 // Called every frame
@@ -34,12 +34,12 @@ void AItem::Tick(float DeltaTime)
 void AItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	
+	UE_LOG(LogTemp, Warning, TEXT("Пересечение началось"));
 }
 
 void AItem::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	int32 OtherBodyIndex)
 {
-	
+	UE_LOG(LogTemp, Warning, TEXT("Пересечение закончилось"));
 }
 

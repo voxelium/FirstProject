@@ -4,13 +4,7 @@
     <projectFile>FirstProject.uproject</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Item.h" afterDir="false" />
-    </list>
+    <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +130,7 @@
       <workItem from="1662478825128" duration="2491000" />
       <workItem from="1662494258855" duration="138000" />
       <workItem from="1662561357588" duration="827000" />
-      <workItem from="1662562485867" duration="1501000" />
+      <workItem from="1662562485867" duration="1533000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>
@@ -236,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662562712292</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="HUD Overlay start">
+      <created>1662565432257</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662565432257</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +260,7 @@
     <MESSAGE value="Explosive start" />
     <MESSAGE value="Pickup Start" />
     <MESSAGE value="PLayerController start" />
-    <option name="LAST_COMMIT_MESSAGE" value="PLayerController start" />
+    <MESSAGE value="HUD Overlay start" />
+    <option name="LAST_COMMIT_MESSAGE" value="HUD Overlay start" />
   </component>
 </project>

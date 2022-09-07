@@ -3,9 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "NiagaraEmitter.h"
 #include "GameFramework/Actor.h"
-
 #include "Item.generated.h"
 
 UCLASS()
@@ -34,7 +32,7 @@ public:
 
 	// 2 вариант использования частиц - как Систему частиц (Niagara)
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Particles Spawn")
-	UNiagaraSystem * OverlapeParticles;
+	class UNiagaraSystem * OverlapeParticles;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Overlap Sound")
 	class USoundCue* OverlapSound;

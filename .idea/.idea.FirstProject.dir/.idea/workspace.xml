@@ -7,8 +7,9 @@
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.uproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Item.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +136,7 @@
       <workItem from="1662478825128" duration="2491000" />
       <workItem from="1662494258855" duration="138000" />
       <workItem from="1662561357588" duration="827000" />
-      <workItem from="1662562485867" duration="188000" />
+      <workItem from="1662562485867" duration="1501000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>
@@ -228,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662445340844</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="PLayerController start">
+      <created>1662562712292</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1662562712292</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +258,7 @@
     <MESSAGE value="000" />
     <MESSAGE value="Explosive start" />
     <MESSAGE value="Pickup Start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pickup Start" />
+    <MESSAGE value="PLayerController start" />
+    <option name="LAST_COMMIT_MESSAGE" value="PLayerController start" />
   </component>
 </project>

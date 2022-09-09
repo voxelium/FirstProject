@@ -2,9 +2,11 @@
 
 
 #include "MainAnimInstance.h"
+#include "MainCharacter.h"
+#include "GameFramework/Character.h"
 #include "GameFramework/PawnMovementComponent.h"
 
-// Подобие конструктора у Actor
+// Получает ссылку на Main Character
 void UMainAnimInstance::NativeInitializeAnimation()
 {
 	Super::NativeInitializeAnimation();
@@ -12,12 +14,15 @@ void UMainAnimInstance::NativeInitializeAnimation()
 	if (Pawn == nullptr)
 	{
 		Pawn = TryGetPawnOwner();
+		if(Pawn)
+		{
+			Main = Cast<AMainCharacter>(Pawn);
+		}
 	}
-
 	
 }
 
-//подобие Тика, для получения даных о состоянии персонажа в каждом кадре
+//Получет даные о состоянии персонажа в каждом кадре
 void UMainAnimInstance::UpdateAnimationProperies()
 {
 	if (Pawn == nullptr)
@@ -32,7 +37,10 @@ void UMainAnimInstance::UpdateAnimationProperies()
 		MovementSpeed = LateralSpeed.Size();
 
 		bIsInAir = Pawn->GetMovementComponent()->IsFalling();
-		
+
+		if(Main == nullptr)
+		{
+			Main = Cast<AMainCharacter>(Pawn);
+		}
 	}
-	
 }

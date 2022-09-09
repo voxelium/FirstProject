@@ -6,6 +6,28 @@
 #include "GameFramework/Character.h"
 #include "MainCharacter.generated.h"
 
+//Энумератор для ускорения
+UENUM(BlueprintType)
+enum class EMovementStatus : uint8
+{
+	EMS_Normal		UMETA("Normal"),
+	EMS_Sprinting	UMETA("Sprinting"),
+	EMS_MAX			UMETA("DefaultMAX")
+};
+
+//Энумератор для выносливаости
+UENUM(BlueprintType)
+enum class EStaminaStatus : uint8
+{
+	ESS_Normal				UMETA("Normal"),
+	ESS_BelowMinimum		UMETA("BelowMinimum"),
+	ESS_Exhausted			UMETA("Exhausted"),
+	ESS_ExhaustedRecovery	UMETA("Exhausted Recovery"),
+	ESS_MAX					UMETA("DefaultMAX")
+	
+	
+};
+
 UCLASS()
 class FIRSTPROJECT_API AMainCharacter : public ACharacter
 {
@@ -15,6 +37,44 @@ public:
 	// Sets default values for this character's properties
 	AMainCharacter();
 
+	//----------------------- УСКОРЕНИЕ -----------------------
+
+	// Энумератор статусов для ускорения
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Running")
+	EMovementStatus MovementStatus;
+
+	// Установливает статус движения и скорость
+	void SetMovementStatus(EMovementStatus Status);
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Running")
+	float RunningSpeed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Running")
+	float SprintingSpeed;
+
+	// Нажат или не нажат Left Shift
+	bool bShiftKeyDown;
+
+	//Запускает ускорение, когда Left Shift нажат
+	void ShiftKeyDown();
+
+	//Прекращает ускорение, когда Left Shift отпущен 
+	void ShiftKeyUp();
+
+	//----------------------- ВЫНОСЛИВОСТЬ -----------------------
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Stamina")
+	EStaminaStatus StaminaStatus;
+
+	FORCEINLINE void SetStaminaStatus (EStaminaStatus Status){StaminaStatus = Status;}
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Stamina")
+	float StaminaDrainRate;
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Stamina")
+	float MinSprintStamina;
+
+	
 	//----------------------- VARIABLES -----------------------
 	
 	//Камера бум позиционирует камеры сзади игрока
@@ -31,13 +91,28 @@ public:
 	
 	//Скорость поворота камеры вверх/вниз
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly, Category=Camera);
-	float BaseLookUp;
-
+	float BaseLookUpRate;
+	
 	APlayerController* PlayerController;
 
-	
-	
 
+	//----------------------------------- Player Stats -----------------
+	
+	UPROPERTY (EditDefaultsOnly, BlueprintReadWrite, Category = "Player Stats")
+	float Damage;
+
+	UPROPERTY (EditDefaultsOnly, BlueprintReadWrite, Category = "Player Stats")
+	float Health;
+
+	UPROPERTY (EditDefaultsOnly, BlueprintReadWrite, Category = "Player Stats")
+	float MaxStamina;
+
+	UPROPERTY (EditDefaultsOnly, BlueprintReadWrite, Category = "Player Stats")
+	float Stamina;
+
+	UPROPERTY (EditDefaultsOnly, BlueprintReadWrite, Category = "Player Stats")
+	int32 Coins;
+	
 //----------------------- FUNCTIONS -----------------------
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -63,8 +138,18 @@ public:
 	//Getter for Camera
 	FORCEINLINE UCameraComponent* GetFollow() const {return FollowCamera; }
 
+	void DecrementHealth(float Amount);
+
+	void IncrementCoins(int32 Amount);
+
+	void Die();
+	
+
+	
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	
 	
 };

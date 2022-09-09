@@ -2,6 +2,8 @@
 
 
 #include "Item.h"
+
+#include "MainCharacter.h"
 #include "Components/SphereComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "Particles/ParticleSystemComponent.h"
@@ -56,18 +58,30 @@ void AItem::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 {
 	UE_LOG(LogTemp, Warning, TEXT("Item Parent - Пересечение началось"));
 
-	if(OverlapeParticles)
+	if (OtherActor)
 	{
-		// UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), OverlapeParticles, GetActorLocation(), FRotator(0.f), true);
-		UNiagaraFunctionLibrary::SpawnSystemAtLocation (GetWorld(), OverlapeParticles, GetActorLocation(),
-			FRotator(0.f), FVector(1.f), true, true,ENCPoolMethod::None, true);
-	}
+		AMainCharacter* Main = Cast<AMainCharacter>(OtherActor);
 
-	if(OverlapSound)
-	{
-		UGameplayStatics::PlaySound2D(this, OverlapSound);
+		if (Main)
+		{
+			if(OverlapeParticles)
+			{
+				// UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), OverlapeParticles, GetActorLocation(), FRotator(0.f), true);
+				UNiagaraFunctionLibrary::SpawnSystemAtLocation (GetWorld(), OverlapeParticles, GetActorLocation(),
+					FRotator(0.f), FVector(1.f), true, true,ENCPoolMethod::None, true);
+			}
+
+			if(OverlapSound)
+			{
+				UGameplayStatics::PlaySound2D(this, OverlapSound);
+			}
+
+			Destroy();
+		}
+		
 	}
-	Destroy();
+	
+	
 	
 }
 

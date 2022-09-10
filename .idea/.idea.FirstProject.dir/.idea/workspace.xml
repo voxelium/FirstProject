@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/MainCharacter_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/MainCharacter_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Pickup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Pickup.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +40,15 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.39513108&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RiderProblemsViewState">
+    <hideBySeverity>
+      <option value="15" />
+    </hideBySeverity>
+  </component>
   <component name="RunManager">
     <configuration name="FirstProject" type="Uproject" factoryName="rider.uproject">
       <option name="PROJECT_FILE_PATH" value="$PROJECT_DIR$/FirstProject.uproject" />
@@ -140,7 +150,9 @@
       <workItem from="1662641330533" duration="4515000" />
       <workItem from="1662702127847" duration="10722000" />
       <workItem from="1662728071350" duration="4169000" />
-      <workItem from="1662748770217" duration="586000" />
+      <workItem from="1662748770217" duration="741000" />
+      <workItem from="1662789028070" duration="3861000" />
+      <workItem from="1662794109306" duration="433000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>
@@ -247,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662565432257</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Succesfully Package">
+      <created>1662749801181</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662749801181</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +290,7 @@
     <MESSAGE value="Pickup Start" />
     <MESSAGE value="PLayerController start" />
     <MESSAGE value="HUD Overlay start" />
-    <option name="LAST_COMMIT_MESSAGE" value="HUD Overlay start" />
+    <MESSAGE value="Succesfully Package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Succesfully Package" />
   </component>
 </project>

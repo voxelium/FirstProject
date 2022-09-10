@@ -8,6 +8,7 @@
 #include "Components/CapsuleComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/KismetSystemLibrary.h"
 
 // Sets default values
 AMainCharacter::AMainCharacter()
@@ -53,7 +54,6 @@ AMainCharacter::AMainCharacter()
 	
 	//установка значений поворота камеры
 	BaseTurnRate	= 65.f;
-	// BaseLookUpRate		= -45.f;
 
 	// Player Stats Default
 	Health =		0.65f;
@@ -64,7 +64,7 @@ AMainCharacter::AMainCharacter()
 	MaxStamina =	1.f;
 	Stamina =		0.5f;
 	StaminaDrainRate = 0.2f;
-	MinSprintStamina = 0.35f;
+	MinSprintStamina = 0.50f;
 
 	Coins =	0;
 
@@ -77,57 +77,10 @@ AMainCharacter::AMainCharacter()
 	
 }
 
-void AMainCharacter::DecrementHealth(float Amount)
-{
-	if((Health - Amount) <= 0.f)
-	{
-		Health -= Amount;
-		Die();
-	}
-	else
-	{
-		Health -= Amount;
-	}
-
-	
-}
-
-void AMainCharacter::IncrementCoins(int32 Amount)
-{
-	Coins = Coins + Amount;	
-}
-
-void AMainCharacter::Die()
-{
-}
 
 
-void AMainCharacter::SetMovementStatus(EMovementStatus Status)
-{
-	MovementStatus = Status;
-	if 	(MovementStatus == EMovementStatus::EMS_Sprinting)
-	{
-		GetCharacterMovement()->MaxWalkSpeed = SprintingSpeed;
-	}
-	else
-	{
-		GetCharacterMovement()->MaxWalkSpeed = RunningSpeed;
-	}
 
-}
-
-void AMainCharacter::ShiftKeyDown()
-{
-	bShiftKeyDown = true;
-}
-
-void AMainCharacter::ShiftKeyUp()
-{
-	bShiftKeyDown = false;
-
-}
-
-// Called when the game starts or when spawned
+// ------------------------------------------BEGIN PLAY----------------------------------
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
@@ -149,9 +102,11 @@ void AMainCharacter::BeginPlay()
 	 // }
 	// Устанавливает Pitch поворот камеры в начале игры
 	PlayerController->SetControlRotation(FRotator(0-20.f,0.f,0.f));
+
+
 }
 
-// Called every frame
+// ------------------------------------------TICK----------------------------------
 void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -317,3 +272,69 @@ void AMainCharacter::LookUpAtRate(float Rate)
 }
 
 
+void AMainCharacter::DecrementHealth(float Amount)
+{
+	if((Health - Amount) <= 0.f)
+	{
+		Health -= Amount;
+		Die();
+	}
+	else
+	{
+		Health -= Amount;
+	}
+
+	
+}
+
+void AMainCharacter::IncrementCoins(int32 Amount)
+{
+	Coins = Coins + Amount;	
+}
+
+void AMainCharacter::Die()
+{
+}
+
+
+void AMainCharacter::SetMovementStatus(EMovementStatus Status)
+{
+	MovementStatus = Status;
+	if 	(MovementStatus == EMovementStatus::EMS_Sprinting)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = SprintingSpeed;
+	}
+	else
+	{
+		GetCharacterMovement()->MaxWalkSpeed = RunningSpeed;
+	}
+
+}
+
+void AMainCharacter::ShiftKeyDown()
+{
+	bShiftKeyDown = true;
+}
+
+void AMainCharacter::ShiftKeyUp()
+{
+	bShiftKeyDown = false;
+}
+
+// Показывает расположение поднятых Pickup PickUp объектов
+void AMainCharacter::ShowPickupLocations() const
+{
+	//Цикл для показа всех DrawDebugSphere в местах расположения поднятых Pickup объектов (версия 1)
+	// for(int32 i = 0;
+	// 	i < PickupLocations.Num();
+	// 	i++)
+	// {
+	// 	UKismetSystemLibrary::DrawDebugSphere(this, PickupLocations[i], 25.f,8, FLinearColor::Green, 10.f, 0.5f);
+	// }
+
+	//Цикл для показа всех DrawDebugSphere в местах расположения поднятых Pickup объектов (версия 2)
+	for (FVector Location : PickupLocations)
+	{
+		UKismetSystemLibrary::DrawDebugSphere(this, Location, 25.f,8, FLinearColor::Green, 10.f, 0.5f);
+	}
+}

@@ -37,6 +37,12 @@ public:
 	// Sets default values for this character's properties
 	AMainCharacter();
 
+	//-----------------------DEBUG items array-----------------
+	TArray<FVector>PickupLocations;
+	
+	UFUNCTION(BlueprintCallable)
+	void ShowPickupLocations() const;
+	
 	//----------------------- УСКОРЕНИЕ -----------------------
 
 	// Энумератор статусов для ускорения

@@ -17,10 +17,11 @@ void APickup::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 	
 		if(OtherActor)
     	{
-    		AMainCharacter* Main = Cast<AMainCharacter>(OtherActor);
-    		if(Main)
+    		AMainCharacter* MainCharacter = Cast<AMainCharacter>(OtherActor);
+    		if(MainCharacter)
     		{
-    			Main->IncrementCoins(CoinCollect);
+    			MainCharacter->IncrementCoins(CoinCollect);
+    			MainCharacter->PickupLocations.Add(GetActorLocation());
     		}
     	}
 }

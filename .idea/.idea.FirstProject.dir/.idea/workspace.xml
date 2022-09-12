@@ -7,10 +7,9 @@
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Character/MainCharacter_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Character/MainCharacter_BP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Pickup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Pickup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +152,7 @@
       <workItem from="1662748770217" duration="741000" />
       <workItem from="1662789028070" duration="3861000" />
       <workItem from="1662794109306" duration="433000" />
+      <workItem from="1662812914779" duration="1329000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>

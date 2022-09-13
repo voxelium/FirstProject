@@ -101,7 +101,6 @@ public:
 	
 	APlayerController* PlayerController;
 
-
 	//----------------------------------- Player Stats -----------------
 	
 	UPROPERTY (EditDefaultsOnly, BlueprintReadWrite, Category = "Player Stats")
@@ -149,9 +148,11 @@ public:
 	void IncrementCoins(int32 Amount);
 
 	void Die();
-	
 
-	
+	//Применяет оружие 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Item")
+	class AWeapon* EquippedWeapon;
+	FORCEINLINE void SetEquippedWeapon(AWeapon* WeaponToSet){EquippedWeapon = WeaponToSet;}
 	
 protected:
 	// Called when the game starts or when spawned

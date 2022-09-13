@@ -205,6 +205,8 @@ void AMainCharacter::Tick(float DeltaTime)
 		default:
 			;
 	}
+
+
 }
 
 // Called to bind functionality to input

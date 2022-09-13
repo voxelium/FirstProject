@@ -6,10 +6,46 @@
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirstProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FirstProject.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BuildPromotionTest/DefaultDiffuse_Mat.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Attack.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Falling_Back_Death.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Idle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Jump1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Jump2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Jump3.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Run.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Two_Cycle_Sprint.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Animations/Walk.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Blend_Idle_Walk_Run.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/MainCharacter_BP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/MainChatacter_AnimBP.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_Body_MAT1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_Brows_MAT2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_Eyes_MAT2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_FacialAnimMap.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_FacialAnimMap_ncl1_1.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_FacialAnimMap_ncl1_2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_Mouth_MAT2.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_diffuse.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_normal.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Materials/Boy01_spec.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/CharBoy.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/CharBoy_PhysicsAsset.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Character/Mesh/CharBoy_Skeleton.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FirstProjectGameMode_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstProjectGameMode_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/HUD/Coin_WGT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/HUD/Coin_WGT.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/HUD/HealthBar_WGT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/HUD/HealthBar_WGT.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/HUD/StaminaBar_WGT.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/HUD/StaminaBar_WGT.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StartMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StartMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Explosive.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Explosive.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Item.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Pickup.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Pickup.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Pickup.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Pickup.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Weapon.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Weapon.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +189,9 @@
       <workItem from="1662789028070" duration="3861000" />
       <workItem from="1662794109306" duration="433000" />
       <workItem from="1662812914779" duration="1329000" />
+      <workItem from="1662962215595" duration="4308000" />
+      <workItem from="1663045816617" duration="47000" />
+      <workItem from="1663046161516" duration="3498000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>
@@ -266,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662749801181</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Weapon Start">
+      <created>1662962308489</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1662962308489</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +337,7 @@
     <MESSAGE value="PLayerController start" />
     <MESSAGE value="HUD Overlay start" />
     <MESSAGE value="Succesfully Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Succesfully Package" />
+    <MESSAGE value="Weapon Start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Weapon Start" />
   </component>
 </project>

@@ -73,7 +73,8 @@ AMainCharacter::AMainCharacter()
 	RunningSpeed = 550.f;
 	SprintingSpeed = 750.f;
 	bShiftKeyDown = false;
-	
+
+	bLMBDown = false;
 	
 }
 
@@ -263,16 +264,28 @@ void AMainCharacter::MoveRight(float Value)
 	}
 }
 
+//Устанавливает скорость поворота камеры влево/вправо
 void AMainCharacter::TurnAtRate(float Rate)
 {
 	AddControllerYawInput(Rate * BaseTurnRate * GetWorld()->GetDeltaSeconds());
 }
 
+//Устанавливает скорость движения камеры вверх/вниз
 void AMainCharacter::LookUpAtRate(float Rate)
 {
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
+
+void AMainCharacter::LMBDown()
+{
+	bLMBDown = true;
+}
+
+void AMainCharacter::LMBUP()
+{
+	bLMBDown = false;
+}
 
 void AMainCharacter::DecrementHealth(float Amount)
 {
@@ -297,6 +310,10 @@ void AMainCharacter::IncrementCoins(int32 Amount)
 void AMainCharacter::Die()
 {
 }
+
+
+
+
 
 
 void AMainCharacter::SetMovementStatus(EMovementStatus Status)

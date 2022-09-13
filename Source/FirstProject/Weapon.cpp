@@ -5,6 +5,8 @@
 #include "MainCharacter.h"
 #include "Engine/SkeletalMeshSocket.h"
 #include "Components/SkeletalMeshComponent.h"
+#include "Kismet/GameplayStatics.h"
+#include "Sound/SoundCue.h"
 
 AWeapon::AWeapon()
 {
@@ -20,12 +22,20 @@ void AWeapon::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 	Super::OnOverlapBegin(OverlappedComponent, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
 	if (OtherActor)
 	{
+		// 1. Вариант экипировки персонажа оружием. При начале пересечения.
+		// AMainCharacter* Character = Cast<AMainCharacter>(OtherActor);
+		// if (Character)
+		// {
+		// 	Equip(Character);
+		// }
+
+		// 2. Вариант экипировки персонажа оружием.
 		AMainCharacter* Character = Cast<AMainCharacter>(OtherActor);
 		if (Character)
 		{
-			Equip(Character);
+			Character->SetActiveOverlappingItem(this);
 		}
-		
+		 
 	}
 }
 
@@ -34,6 +44,13 @@ void AWeapon::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 	int32 OtherBodyIndex)
 {
 	Super::OnOverlapEnd(OverlappedComponent, OtherActor, OtherComp, OtherBodyIndex);
+
+	// 2. Вариант экипировки персонажа оружием.
+	AMainCharacter* Character = Cast<AMainCharacter>(OtherActor);
+	if (Character)
+	{
+		Character->SetActiveOverlappingItem(nullptr);
+	}
 }
 
 //Экипирует персонажа оружием
@@ -52,6 +69,11 @@ void AWeapon::Equip(AMainCharacter* Character)
 		{
 			RightHandSocket->AttachActor(this, Character->GetMesh());
 			bPikupRotate = false;
+			Character->SetEquippedWeapon(this);
+		}
+		if(OnEquipSound)
+		{
+			UGameplayStatics::PlaySound2D(this, OnEquipSound);	
 		}
 	}
 	

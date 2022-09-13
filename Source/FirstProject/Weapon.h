@@ -18,6 +18,9 @@ public:
 	
 	AWeapon();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Item | Sound")
+	class USoundCue* OnEquipSound;
+	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category="Skeletal Mesh")
 	USkeletalMeshComponent* SkeletalMesh;
 
@@ -25,7 +28,7 @@ public:
 	
 	virtual void OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex) override;
 
-	//Экипирует персонажа оружием
+	//Экипирует персонажа оружием при пересечении
 	void Equip (class AMainCharacter* Character);
 	
 };

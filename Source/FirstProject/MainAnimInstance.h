@@ -27,8 +27,9 @@ public:
 	bool bIsInAir;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Movement")
-	class APawn* Pawn;
+	APawn* Pawn;
 
-
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Movement")
+	class AMainCharacter* Main;
 	
 };

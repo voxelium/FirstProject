@@ -6,6 +6,8 @@ public class FirstProject : ModuleRules
 {
 	public FirstProject(ReadOnlyTargetRules Target) : base(Target)
 	{
+		PublicIncludePaths.Add("FirstProject");
+		
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG" });

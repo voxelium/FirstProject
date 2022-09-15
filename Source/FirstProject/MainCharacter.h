@@ -99,7 +99,7 @@ public:
 	UPROPERTY(VisibleAnywhere,BlueprintReadOnly, Category=Camera);
 	float BaseLookUpRate;
 	
-	APlayerController* PlayerController;
+
 
 	//----------------------------------- Player Stats -----------------
 	
@@ -160,7 +160,7 @@ public:
 	FORCEINLINE void SetEquippedWeapon(AWeapon* WeaponToSet){EquippedWeapon = WeaponToSet;}
 
 	//Применяет айтем с которым пересекается персонаж
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Item")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Item")
 	class AItem* ActiveOverlappingItem;
 	FORCEINLINE void SetActiveOverlappingItem(AItem* Item){ActiveOverlappingItem = Item;}
 

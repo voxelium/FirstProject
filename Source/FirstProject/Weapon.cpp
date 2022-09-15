@@ -6,12 +6,14 @@
 #include "Engine/SkeletalMeshSocket.h"
 #include "Components/SkeletalMeshComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "Particles/ParticleSystemComponent.h"
 #include "Sound/SoundCue.h"
 
 AWeapon::AWeapon()
 {
 	SkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>("Skeletal Mesh");
 	SkeletalMesh->SetupAttachment(GetRootComponent());
+	bWeaponParticles = false;
 }
 
 
@@ -74,6 +76,11 @@ void AWeapon::Equip(AMainCharacter* Character)
 		if(OnEquipSound)
 		{
 			UGameplayStatics::PlaySound2D(this, OnEquipSound);	
+		}
+
+		if(!bWeaponParticles)
+		{
+		IdleParticlesComponent->DestroyComponent();
 		}
 	}
 	

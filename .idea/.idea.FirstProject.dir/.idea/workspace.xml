@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Weapons/Weapon_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Weapons/Weapon_BP.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StartMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StartMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/Weapon.cpp" afterDir="false" />
@@ -18,10 +20,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Source/FirstProject.Target.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FirstProject/FirstProject.Build.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FirstProjectEditor.Target.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -157,6 +162,24 @@
       <workItem from="1662962215595" duration="4308000" />
       <workItem from="1663045816617" duration="47000" />
       <workItem from="1663046161516" duration="5504000" />
+      <workItem from="1663181042979" duration="94000" />
+      <workItem from="1663181201663" duration="35000" />
+      <workItem from="1663181500599" duration="51000" />
+      <workItem from="1663181593794" duration="33000" />
+      <workItem from="1663219934577" duration="266000" />
+      <workItem from="1663220251956" duration="260000" />
+      <workItem from="1663220651095" duration="157000" />
+      <workItem from="1663220873288" duration="28000" />
+      <workItem from="1663220939289" duration="44000" />
+      <workItem from="1663221024234" duration="122000" />
+      <workItem from="1663221245920" duration="646000" />
+      <workItem from="1663222781820" duration="40000" />
+      <workItem from="1663223135481" duration="7000" />
+      <workItem from="1663223868265" duration="111000" />
+      <workItem from="1663228418468" duration="267000" />
+      <workItem from="1663228770116" duration="622000" />
+      <workItem from="1663231398096" duration="575000" />
+      <workItem from="1663253444280" duration="2675000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>

@@ -2,6 +2,8 @@
 
 
 #include "MainCharacter.h"
+
+#include "Weapon.h"
 #include "Camera/CameraActor.h"
 #include "Camera/PlayerCameraManager.h"
 #include "Camera/CameraComponent.h"
@@ -86,8 +88,7 @@ void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Устанавливает ограничение для Pitch rotation камеры без проверки ссылки на PlayerController
-	PlayerController = Cast<APlayerController>(Controller);
+	APlayerController* PlayerController = Cast<APlayerController>(Controller);
 	PlayerController->PlayerCameraManager->ViewPitchMin = -45.f;
 	PlayerController->PlayerCameraManager->ViewPitchMax = 0.f;
 	
@@ -231,6 +232,9 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &AMainCharacter::ShiftKeyDown);
 	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &AMainCharacter::ShiftKeyUp);
+
+	PlayerInputComponent->BindAction("LMB", IE_Pressed, this, &AMainCharacter::LMBDown);
+	PlayerInputComponent->BindAction("LMB", IE_Released, this, &AMainCharacter::LMBUP);
 	
 }
 
@@ -280,6 +284,15 @@ void AMainCharacter::LookUpAtRate(float Rate)
 void AMainCharacter::LMBDown()
 {
 	bLMBDown = true;
+	if(ActiveOverlappingItem)
+	{
+		AWeapon* Weapon = Cast<AWeapon>(ActiveOverlappingItem);
+		if (Weapon)
+		{
+			Weapon->Equip(this);
+			SetActiveOverlappingItem(nullptr);
+		}
+	}
 }
 
 void AMainCharacter::LMBUP()

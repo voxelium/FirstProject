@@ -300,6 +300,16 @@ void AMainCharacter::LMBUP()
 	bLMBDown = false;
 }
 
+void AMainCharacter::SetEquippedWeapon(AWeapon* WeaponToSet)
+{
+	if(EquippedWeapon)
+	{
+		EquippedWeapon->Destroy();
+	}
+
+	EquippedWeapon = WeaponToSet;
+}
+ 
 void AMainCharacter::DecrementHealth(float Amount)
 {
 	if((Health - Amount) <= 0.f)
@@ -323,9 +333,6 @@ void AMainCharacter::IncrementCoins(int32 Amount)
 void AMainCharacter::Die()
 {
 }
-
-
-
 
 
 

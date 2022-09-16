@@ -14,6 +14,7 @@ AWeapon::AWeapon()
 	SkeletalMesh = CreateDefaultSubobject<USkeletalMeshComponent>("Skeletal Mesh");
 	SkeletalMesh->SetupAttachment(GetRootComponent());
 	bWeaponParticles = false;
+	WeaponState = EWeaponState::EWS_Pickup;
 }
 
 
@@ -22,7 +23,7 @@ void AWeapon::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComponent, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-	if (OtherActor)
+	if ((WeaponState == EWeaponState::EWS_Pickup) && OtherActor)
 	{
 		// 1. Вариант экипировки персонажа оружием. При начале пересечения.
 		// AMainCharacter* Character = Cast<AMainCharacter>(OtherActor);
@@ -71,7 +72,9 @@ void AWeapon::Equip(AMainCharacter* Character)
 		{
 			RightHandSocket->AttachActor(this, Character->GetMesh());
 			bPikupRotate = false;
+
 			Character->SetEquippedWeapon(this);
+			Character->SetActiveOverlappingItem(nullptr); 
 		}
 		if(OnEquipSound)
 		{
@@ -84,4 +87,16 @@ void AWeapon::Equip(AMainCharacter* Character)
 		}
 	}
 	
+}
+
+// Присвоить состояние оружия
+void AWeapon::SetWeaponState(EWeaponState State)
+{
+	WeaponState = State;
+}
+
+//Получить состояние оружия
+EWeaponState AWeapon::GetWeaponState()
+{
+	return WeaponState;
 }

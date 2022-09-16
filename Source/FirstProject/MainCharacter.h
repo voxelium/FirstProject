@@ -157,7 +157,8 @@ public:
 	//Применяет оружие с которым пересекается персонаж
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="Item")
 	class AWeapon* EquippedWeapon;
-	FORCEINLINE void SetEquippedWeapon(AWeapon* WeaponToSet){EquippedWeapon = WeaponToSet;}
+
+	void SetEquippedWeapon(AWeapon* WeaponToSet);
 
 	//Применяет айтем с которым пересекается персонаж
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Item")

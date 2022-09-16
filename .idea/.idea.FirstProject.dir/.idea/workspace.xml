@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Weapons/Weapon_BP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Weapons/Weapon_BP.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/StartMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StartMap.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
@@ -26,6 +25,8 @@
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/FloatingPlatform.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FirstProject/Weapon.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FirstProject/Weapon.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FirstProjectEditor.Target.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -180,6 +181,9 @@
       <workItem from="1663228770116" duration="622000" />
       <workItem from="1663231398096" duration="575000" />
       <workItem from="1663253444280" duration="2675000" />
+      <workItem from="1663257146332" duration="2901000" />
+      <workItem from="1663304893419" duration="349000" />
+      <workItem from="1663305307127" duration="262000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>

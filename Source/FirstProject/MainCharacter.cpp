@@ -2,7 +2,7 @@
 
 
 #include "MainCharacter.h"
-
+#include "Animation/AnimInstance.h"
 #include "Weapon.h"
 #include "Camera/CameraActor.h"
 #include "Camera/PlayerCameraManager.h"
@@ -77,11 +77,22 @@ AMainCharacter::AMainCharacter()
 	bShiftKeyDown = false;
 
 	bLMBDown = false;
+
+	bAttacking = false;
 	
 }
 
 
-
+void AMainCharacter::Attack()
+{
+	bAttacking = true;
+	UAnimMontage* AnimInstance = GetMesh()->GetAnimInstance();
+	if (AnimInstance && CombatMontage)
+	{
+		AnimInstance->Montage_Play(CombatMontage, 1.35f);
+		AnimInstance->Montage_JumpToSection("Attack_01", CombatMontage);
+	}
+}
 
 // ------------------------------------------BEGIN PLAY----------------------------------
 void AMainCharacter::BeginPlay()
@@ -291,6 +302,10 @@ void AMainCharacter::LMBDown()
 		{
 			Weapon->Equip(this);
 			SetActiveOverlappingItem(nullptr);
+		}
+		else if (EquippedWeapon)
+		{
+			Attack();
 		}
 	}
 }

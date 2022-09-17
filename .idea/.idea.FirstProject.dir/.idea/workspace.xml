@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e6a2e9b1-40b1-42ae-ad1a-2d7250d58423" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FirstProject.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Character/Animations/Two_Cycle_Sprint.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Character/Animations/Attack.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Character/MainChatacter_AnimBP.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Character/MainChatacter_AnimBP.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Plugins/Developer/RiderLink/Intermediate/FileSystemMappings.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game_Mechanics/Character/Mesh/CharBoy_Skeleton.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game_Mechanics/Character/Mesh/CharBoy_Skeleton.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FirstProject/MainCharacter.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +183,8 @@
       <workItem from="1663257146332" duration="2901000" />
       <workItem from="1663304893419" duration="349000" />
       <workItem from="1663305307127" duration="1603000" />
-      <workItem from="1663392743150" duration="1114000" />
+      <workItem from="1663392743150" duration="2029000" />
+      <workItem from="1663429493272" duration="2015000" />
     </task>
     <task id="LOCAL-00001" summary="update code">
       <created>1661946578899</created>
@@ -316,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663312983473</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Weapon Complete">
+      <created>1663395127036</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663395127036</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,8 +352,8 @@
     <MESSAGE value="HUD Overlay start" />
     <MESSAGE value="Succesfully Package" />
     <MESSAGE value="Weapon Start" />
-    <MESSAGE value="Weapon Complete" />
     <MESSAGE value="Armed Blendshapes begin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Armed Blendshapes begin" />
+    <MESSAGE value="Weapon Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Weapon Complete" />
   </component>
 </project>

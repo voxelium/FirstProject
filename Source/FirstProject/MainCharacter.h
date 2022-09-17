@@ -165,6 +165,13 @@ public:
 	class AItem* ActiveOverlappingItem;
 	FORCEINLINE void SetActiveOverlappingItem(AItem* Item){ActiveOverlappingItem = Item;}
 
+	UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category="Anims")
+	bool bAttacking;
+	
+	void Attack();
+
+	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category="Anims")
+	UAnimMontage* CombatMontage; 
 	
 protected:
 	// Called when the game starts or when spawned

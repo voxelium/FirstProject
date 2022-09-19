@@ -13,7 +13,7 @@ void APickup::OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* O
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	Super::OnOverlapBegin(OverlappedComponent, OtherActor, OtherComp, OtherBodyIndex, bFromSweep, SweepResult);
-	UE_LOG(LogTemp, Warning, TEXT ("Pickup - Начало пересечения"));
+	// UE_LOG(LogTemp, Warning, TEXT ("Pickup - Начало пересечения"));
 
 	if(OtherActor)
 			{
@@ -32,5 +32,5 @@ void APickup::OnOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* Oth
 	int32 OtherBodyIndex)
 {
 	Super::OnOverlapEnd(OverlappedComponent, OtherActor, OtherComp, OtherBodyIndex);
-	UE_LOG(LogTemp, Warning, TEXT("Pickup - Конец пересечения"));
+	// UE_LOG(LogTemp, Warning, TEXT("Pickup - Конец пересечения"));
 }

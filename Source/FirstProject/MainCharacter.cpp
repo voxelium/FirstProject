@@ -77,20 +77,19 @@ AMainCharacter::AMainCharacter()
 	bShiftKeyDown = false;
 
 	bLMBDown = false;
-
-	bAttacking = false;
+	
 	
 }
 
-
+//Атака
 void AMainCharacter::Attack()
 {
 	bAttacking = true;
-	UAnimMontage* AnimInstance = GetMesh()->GetAnimInstance();
+	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 	if (AnimInstance && CombatMontage)
 	{
 		AnimInstance->Montage_Play(CombatMontage, 1.35f);
-		AnimInstance->Montage_JumpToSection("Attack_01", CombatMontage);
+		AnimInstance->Montage_JumpToSection(FName("Attack_01"), CombatMontage);
 	}
 }
 
@@ -291,7 +290,7 @@ void AMainCharacter::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
-
+//Нажимается Левая Кнопка мыши
 void AMainCharacter::LMBDown()
 {
 	bLMBDown = true;
@@ -303,12 +302,14 @@ void AMainCharacter::LMBDown()
 			Weapon->Equip(this);
 			SetActiveOverlappingItem(nullptr);
 		}
+	}
 		else if (EquippedWeapon)
 		{
 			Attack();
+			UE_LOG(LogTemp, Warning, TEXT ("Вызывается функция Attack"));
 		}
 	}
-}
+
 
 void AMainCharacter::LMBUP()
 {

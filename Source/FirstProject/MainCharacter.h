@@ -170,6 +170,7 @@ public:
 	
 	void Attack();
 
+	//объявляется Anim Montag для атаки
 	UPROPERTY(EditDefaultsOnly,BlueprintReadOnly, Category="Anims")
 	UAnimMontage* CombatMontage; 
 	

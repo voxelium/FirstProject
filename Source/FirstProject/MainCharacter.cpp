@@ -84,12 +84,40 @@ AMainCharacter::AMainCharacter()
 //Атака
 void AMainCharacter::Attack()
 {
-	bAttacking = true;
-	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
-	if (AnimInstance && CombatMontage)
+	if(!bAttacking)
 	{
-		AnimInstance->Montage_Play(CombatMontage, 1.35f);
-		AnimInstance->Montage_JumpToSection(FName("Attack_01"), CombatMontage);
+		bAttacking = true;
+	
+		UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
+		if (AnimInstance && CombatMontage)
+		{
+			int32 Section = FMath::RandRange(0,1);
+			switch(Section)
+			{
+			case 0:
+				AnimInstance->Montage_Play(CombatMontage, 1.8f);
+				AnimInstance->Montage_JumpToSection(FName("Attack_01"), CombatMontage);
+				break;
+			case 1:
+				AnimInstance->Montage_Play(CombatMontage, 1.8f);
+				AnimInstance->Montage_JumpToSection(FName("Attack_02"), CombatMontage);
+				break;
+			default:
+				;
+				break;
+				
+			}
+			
+		}
+	}
+}
+
+void AMainCharacter::AttackEnd()
+{
+	bAttacking=false;
+	if(bLMBDown)
+	{
+		Attack();
 	}
 }
 
@@ -250,7 +278,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void AMainCharacter::MoveForward(float Value)
 {
-	if ((Controller != nullptr) && (Value != 0.0f))
+	if ((Controller != nullptr) && (Value != 0.0f) && (!bAttacking))
 	{
 		// переменная поворота игрока
 		const FRotator Rotation = Controller->GetControlRotation();
@@ -266,7 +294,7 @@ void AMainCharacter::MoveForward(float Value)
 
 void AMainCharacter::MoveRight(float Value)
 {
-	if ((Controller != nullptr) && (Value != 0.0f))
+	if ((Controller != nullptr) && (Value != 0.0f) && (!bAttacking))
 	{
 		// переменная поворота игрока
 		const FRotator Rotation = Controller->GetControlRotation();

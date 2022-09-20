@@ -17,7 +17,7 @@ public:
 
 	virtual void NativeInitializeAnimation() override;
 
-	UFUNCTION(BlueprintCallable, Category=AnimationProperties)
+	UFUNCTION(BlueprintCallable, Category="Movement")
 	void UpdateAnimationProperies();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Movement")

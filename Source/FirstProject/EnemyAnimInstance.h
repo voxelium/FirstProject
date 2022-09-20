@@ -13,5 +13,25 @@ UCLASS()
 class FIRSTPROJECT_API UEnemyAnimInstance : public UAnimInstance
 {
 	GENERATED_BODY()
+
+public:
+
+	virtual void NativeInitializeAnimation() override;
+
+	// Функция получения ссылки на  Enemy
+	void GetEnemy();
+	
+	UFUNCTION(BlueprintCallable, Category="Movement")
+	void UpdateAnimationProperies();
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Movement")
+	float MovementSpeed;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Movement")
+	APawn* Pawn;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Movement")
+	class AEnemy* Enemy;
+	
 	
 };

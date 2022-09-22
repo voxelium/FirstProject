@@ -22,7 +22,7 @@ public:
 	void GetEnemy();
 	
 	UFUNCTION(BlueprintCallable, Category="Movement")
-	void UpdateAnimationProperies();
+	void UpdateAnimationProperties();
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Movement")
 	float MovementSpeed;

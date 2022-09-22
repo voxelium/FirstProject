@@ -13,7 +13,7 @@ void UEnemyAnimInstance::NativeInitializeAnimation()
 
 
 
-void UEnemyAnimInstance::UpdateAnimationProperies()
+void UEnemyAnimInstance::UpdateAnimationProperties()
 {
 	GetEnemy();
 
@@ -21,6 +21,7 @@ void UEnemyAnimInstance::UpdateAnimationProperies()
 	FVector LateralSpeed = FVector(Speed.X, Speed.Y, 0.f);
 	MovementSpeed = LateralSpeed.Size();
 }
+
 
 // Получает ссылку на Enemy
 void UEnemyAnimInstance::GetEnemy()
